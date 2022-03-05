@@ -1,0 +1,15 @@
+{
+  "name": "mystarter",
+  "version": "1.0.0",
+  "description": "The most popular starters",
+  "bin": "./index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate": "node ./index.js"
+  },
+  "author": "Enver Yakubov",
+  "license": "ISC",
+  "dependencies": {
+    "generate-template-files": "^3.2.0"
+  }
+}
