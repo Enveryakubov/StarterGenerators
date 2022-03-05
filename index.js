@@ -21,7 +21,7 @@ generateTemplateFiles([
     option: '.gitignore',
     defaultCase: '(pascalCase)',
     entry: {
-      folderPath: path.resolve(__dirname, 'templates', 'gitignore'),
+      folderPath: './templates/gitignore'),
     },
     dynamicReplacers: ['__no_slots__'],
     output: {
