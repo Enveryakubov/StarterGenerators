@@ -18,7 +18,7 @@ generateTemplateFiles([
     },
   },
   {
-    option: '.gitignore',
+    option: 'test',
     defaultCase: '(pascalCase)',
     entry: {
       folderPath: path.resolve(__dirname, 'templates', 'test'),
