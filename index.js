@@ -5,10 +5,23 @@ const path = require('path');
 
 generateTemplateFiles([
   {
-    option: 'Create Prettier Config',
+    option: '.prettierrc',
     defaultCase: '(pascalCase)',
     entry: {
       folderPath: path.resolve(__dirname, 'templates', 'prettier'),
+    },
+    dynamicReplacers: ['__no_slots__'],
+    output: {
+      path: '.',
+      pathAndFileNameDefaultCase: '(kebabCase)',
+      overwrite: true,
+    },
+  },
+  {
+    option: '.gitignore',
+    defaultCase: '(pascalCase)',
+    entry: {
+      folderPath: path.resolve(__dirname, 'templates', 'gitignore'),
     },
     dynamicReplacers: ['__no_slots__'],
     output: {
